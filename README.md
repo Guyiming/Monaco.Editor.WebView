@@ -1,5 +1,5 @@
 # Monaco.Editor.WebView
-Monaco Editor based on WebView2, for desktop use, such as WPF, WinForm.
+A wrapper for the [Monaco Editor](https://microsoft.github.io/monaco-editor/) and based on WebView2, for desktop use, such as WPF, WinForm.
 > Only packaged the Monaco Editor min folder.
 
 
@@ -8,6 +8,8 @@ Monaco Editor based on WebView2, for desktop use, such as WPF, WinForm.
 |[![](https://img.shields.io/nuget/v/monaco.editor.webview.svg)](https://www.nuget.org/packages/Monaco.Editor.WebView)|
 
 # How to use
+Install the nuget package: `Monaco.Editor.WebView`.
+
 Add a `WebView2` control:
 ```xaml
 <Grid>
@@ -15,6 +17,7 @@ Add a `WebView2` control:
                   x:Name="webView21" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
 </Grid>
 ```
+
 write some code
 ```csharp
 private void MainWindow_Loaded(object sender, RoutedEventArgs e)

@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<VersionPrefix>0.52.2.2</VersionPrefix>
+		<Authors>JimCarter</Authors>
+		<Description>Monaco Editor based on WebView2, for desktop use, such as WPF, WinForm.
+基于WebView2的Monaco编辑器, 适用于WPF/WinForm等平台
+		</Description>
+		<PackageIcon>icon.png</PackageIcon>
+		<PackageReleaseNotes>The version same to Monaco Editor version.</PackageReleaseNotes>
+		<PackageProjectUrl>https://github.com/Guyiming/Monaco.Editor.WebView</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/Guyiming/Monaco.Editor.WebView</RepositoryUrl>
+		<PackageTags>monaco;editor;monacoeditor;wpf;winform</PackageTags>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Update="icon.png">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<Content Include="Monaco\**">
+			<PackageCopyToOutput>true</PackageCopyToOutput>
+			<CopyToOutputDirectory>always</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Web.WebView2" Version="1.0.3351.48" />
+	</ItemGroup>
+
+</Project>

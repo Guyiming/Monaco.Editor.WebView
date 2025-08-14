@@ -30,6 +30,6 @@ private void WebView21_NavigationCompleted(object? sender, CoreWebView2Navigatio
     webView21.ExecuteScriptAsync("editor.setValue('public class Test{}');");
 }
 ```
-after the 'NavigationCompleted' you can call the `editor` relate function.
+after the `NavigationCompleted` you can call the `editor` relate function.
 
 <img width="1175" height="666" alt="image" src="https://github.com/user-attachments/assets/716d2bab-cf72-41bf-b6b6-1cb4c2d471e3" />

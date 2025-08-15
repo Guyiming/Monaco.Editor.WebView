@@ -3,7 +3,7 @@
 	<PropertyGroup>
 		<TargetFramework>netstandard2.0</TargetFramework>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-		<VersionPrefix>0.52.2.2</VersionPrefix>
+		<VersionPrefix>0.52.2.3</VersionPrefix>
 		<Authors>JimCarter</Authors>
 		<Description>Monaco Editor based on WebView2, for desktop use, such as WPF, WinForm.
 基于WebView2的Monaco编辑器, 适用于WPF/WinForm等平台

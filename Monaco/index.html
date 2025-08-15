@@ -35,14 +35,9 @@
         var editor = monaco.editor.create(document.getElementById('container'), {
             value: '',
             language: 'cpp',
-            theme: 'vs-dark'
+            theme: 'vs-dark',
+            automaticLayout: true
         });
-
-        function resizeEditor() {
-            if (editor) {
-                editor.layout();
-            }
-        };
 
         function setTheme(theme) {
             if (editor) {
@@ -50,7 +45,6 @@
             }
         }
 
-        window.addEventListener('resize', resizeEditor);
     </script>
 </body>
 </html> 
